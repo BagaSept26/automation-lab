@@ -1,0 +1,18 @@
+tasks:
+  - name: Setup & Welcome # Memberi nama task agar lebih jelas
+    init: |
+      echo "Menginstal dependensi Python..."
+      pip install -r requirements.txt
+      echo "Workspace Ready! Pastikan OPENAI_API_KEY sudah di-set di Gitpod Variables."
+      echo "Anda bisa menjalankan skrip dengan: python ai_committer.py"
+    command: |
+      echo "Selamat datang di AI Commit Automation!"
+      echo "Untuk memulai, buat perubahan pada file, stage (git add .), lalu jalankan 'python ai_committer.py'"
+
+vscode:
+  extensions:
+    - ms-python.python        # Ekstensi Python resmi dari Microsoft
+    #- GitHub.copilot          # GitHub Copilot (pastikan akun Anda punya akses)
+    # Opsional: Ekstensi lain yang mungkin berguna
+    # - eamodio.gitlens       # GitLens — Git supercharged
+    # - redhat.vscode-yaml    # Dukungan untuk file YAML
